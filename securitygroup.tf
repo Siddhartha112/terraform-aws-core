@@ -1,5 +1,5 @@
 resource "aws_security_group" "allow_ssh" {
-  name        = "allow_ssh"
+  name        = "allow_ssh-gopal"
   description = "Allow ssh inbound traffic"
   
   ingress {
@@ -25,7 +25,7 @@ resource "aws_security_group" "allow_ssh" {
 }
 
 resource "aws_security_group" "allow_http" {
-  name        = "allow_http"
+  name        = "allow_http-gopal"
   description = "Allow http inbound traffic"
   
   ingress {
