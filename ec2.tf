@@ -1,7 +1,7 @@
 data "aws_availability_zones" "my_az" {
   filter {
     name = "opt-in-status"
-    values = "opt-in-not-required"
+    values = ["opt-in-not-required"]
   }
 }
 ##3this will create an ec2 instance 
