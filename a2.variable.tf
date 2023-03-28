@@ -19,3 +19,7 @@ variable "business_division" {
   type = string 
   default = "SAP"
 }
+variable "instance_keypair" {
+  type = string
+  default = "terraform-gopal"
+}
