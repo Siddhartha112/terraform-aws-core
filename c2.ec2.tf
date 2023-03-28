@@ -1,7 +1,7 @@
 module "ec2_public" {
   source  = "terraform-aws-modules/ec2-instance/aws"
   version = "4.3.0"
-  name = "{$var.environment}-BastionHost"
+  name = "${var.environment}-BastionHost"
   ami = data.aws_ami.example.id
   instance_type = var.instance_type
   subnet_id = module.vpc.public_subnets[0]
