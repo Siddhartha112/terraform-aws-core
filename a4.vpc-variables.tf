@@ -20,20 +20,20 @@ variable "vpc_public_subnet" {
 
 variable "vpc_private_subnet" {
   type = list(string)
-  default = [ "10.0.101.0/24","10.0.101.0/24" ]
+  default = [ "10.0.101.0/24","10.0.102.0/24" ]
 }
 
 variable "vpc_database_subnet" {
   type = list(string)
-  default = [ "10.0.151.0/24","10.0.151.0/24" ]
+  default = [ "10.0.151.0/24","10.0.152.0/24" ]
 }
 
-variable "vpc_create_database_subnet_group" {
+variable "create_database_subnet_group" {
   type = bool 
   default = true 
 }
 
-variable "vpc_create_database_subnet_route_table" {
+variable "create_database_subnet_route_table" {
   type = bool 
   default = true 
 }
