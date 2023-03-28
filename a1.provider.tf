@@ -6,6 +6,9 @@
       source  = "hashicorp/aws"
       version = "~> 4.0"
     }
+    null = {
+      source = "hashicorp/null"
+    }
   }
 }
 

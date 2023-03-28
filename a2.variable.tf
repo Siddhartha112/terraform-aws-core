@@ -21,5 +21,5 @@ variable "business_division" {
 }
 variable "instance_keypair" {
   type = string
-  default = "terraform-gopal"
+  default = "bastionkey"
 }
