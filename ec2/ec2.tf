@@ -1,4 +1,4 @@
-/*data "aws_availability_zones" "my_az" {
+data "aws_availability_zones" "my_az" {
   filter {
     name = "opt-in-status"
     values = ["opt-in-not-required"]
@@ -16,4 +16,4 @@ resource "aws_instance" "ec2" {
     "Name" = "for_each_demo-${each.value}"
   }
   ####path module is like a current direct
-}*/
+}
