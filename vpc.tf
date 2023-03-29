@@ -39,3 +39,14 @@ resource "aws_route_table_association" "private" {
     route_table_id = aws_route_table.this-rt.id 
   
 }
+
+resource "aws_internet_gateway" "this-igw" {
+    vpc_id = aws_vpc.this.id 
+
+}
+
+resource "aws_route" "internet_route" {
+  destination_cidr_block = "0.0.0.0/0"
+  route_table_id = aws_route_table.this-rt.id 
+  gateway_id = aws_internet_gateway.this-igw.id 
+}
